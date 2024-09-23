@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+
+    display: grid;
+    place-content: center;
+    background-color: rgb(41, 41, 41);
+    color: whitesmoke;
+
+
+}
+img{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+a{
+    color: rgb(6, 249, 6);
+}
+
+h1,p, img{
+    text-align: center;
+}
