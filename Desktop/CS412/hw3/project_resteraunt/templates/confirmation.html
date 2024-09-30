@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Order Confirmation{% endblock %}
+
+{% block content %}
+    <div class="confirmation-page">
+        <h2>Thank You for Your Order!</h2>
+        <p>Your order has been successfully placed. Below are the details of your order:</p>
+
+        <!-- Order Summary Section -->
+        <fieldset>
+            <legend>Order Summary</legend>
+
+            <ul>
+                {% for item in order_items %}
+                    <li>{{ item }}</li>
+                {% endfor %}
+            </ul>
+
+            <!-- Extras (if any) -->
+            {% if extras %}
+                <h4>Extras:</h4>
+                <ul>
+                    {% for extra in extras %}
+                        <li>{{ extra }}</li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+        </fieldset>
+
+        <!-- Special Instructions Section -->
+        {% if special_instructions %}
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <p>{{ special_instructions }}</p>
+            </fieldset>
+        {% endif %}
+
+        <!-- Customer Information Section -->
+        <fieldset>
+            <legend>Customer Information</legend>
+            <p><strong>Name:</strong> {{ customer_name }}</p>
+            <p><strong>Phone:</strong> {{ customer_phone }}</p>
+            <p><strong>Email:</strong> {{ customer_email }}</p>
+        </fieldset>
+
+        <p>We will contact you if there are any issues with your order. Enjoy your meal!</p>
+    </div>
+{% endblock %}

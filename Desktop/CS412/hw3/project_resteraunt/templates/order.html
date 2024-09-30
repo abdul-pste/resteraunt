@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Naruto Meals | Place Your Order{% endblock %}
+
+{% block content %}
+    <div class="order-page">
+        <h2>Place Your Order</h2>
+        <p>Choose your favorite ramen and customize your meal!</p>
+
+        <!-- Order form -->
+        <form method="POST" action="{% url 'submit_order' %}">
+            {% csrf_token %}
+
+            <!-- Menu items with checkboxes -->
+            <fieldset>
+                <legend>Menu Items</legend>
+
+                <label>
+                    <input type="checkbox" name="item_1" value="Miso Ramen">
+                    Miso Ramen - $12.99
+                </label>
+                <br>
+
+                <label>
+                    <input type="checkbox" name="item_2" value="Tonkotsu Ramen">
+                    Tonkotsu Ramen - $14.99
+                </label>
+                <br>
+
+                <label>
+                    <input type="checkbox" name="item_3" value="Spicy Ramen">
+                    Spicy Ramen - $13.99
+                </label>
+                <br>
+
+                <!-- Daily Special (with dynamic name and details from context) -->
+                <label>
+                    <input type="checkbox" name="item_4" value="{{ daily_special.name }}">
+                    {{ daily_special.name }} - ${{ daily_special.price }}
+                    <br>
+                    <small>{{ daily_special.description }}</small>
+                </label>
+            </fieldset>
+
+            <!-- Customization for Tonkotsu Ramen -->
+            <fieldset>
+                <legend>Customize Your Tonkotsu Ramen</legend>
+                <p>Add extras:</p>
+
+                <label>
+                    <input type="checkbox" name="topping_chashu" value="extra_chashu">
+                    Extra Chashu - $2.00
+                </label>
+                <br>
+
+                <label>
+                    <input type="checkbox" name="topping_egg" value="soft_boiled_egg">
+                    Soft Boiled Egg - $1.50
+                </label>
+            </fieldset>
+
+            <!-- Special Instructions -->
+            <fieldset>
+                <legend>Special Instructions</legend>
+                <textarea name="special_instructions" rows="4" cols="50" placeholder="Any special requests?"></textarea>
+            </fieldset>
+
+            <!-- Customer Information -->
+            <fieldset>
+                <legend>Your Information</legend>
+
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+
+            <!-- Submit Button -->
+            <button type="submit">Submit Order</button>
+        </form>
+    </div>
+
+{% endblock %}

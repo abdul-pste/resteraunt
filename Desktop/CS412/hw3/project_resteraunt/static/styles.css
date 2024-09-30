@@ -1,0 +1,329 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1b1b1bb9;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #ffb347;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+nav {
+    margin: 20px 0;
+    text-align: center;
+}
+nav a {
+    margin: 0 15px;
+    color: #f8f8f8;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+nav a:hover {
+    color: #ff4500;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+.hero {
+    background-image: url('https://example.com/naruto-ramen.jpg'); /* Add a Naruto ramen-themed image URL */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+.menu-section {
+    margin: 40px 0;
+}
+.menu-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.menu-item {
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+.menu-item img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.menu-item h3 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+}
+.menu-item p {
+    font-size: 1rem;
+    color: #666;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.order-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+button[type="submit"]:hover {
+    background-color: #ff7033;
+}
+
+/* General page styling */
+.confirmation-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #ff4500;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #333;
+    text-align: center;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #333;
+}
+
+/* Customer Info Section */
+.customer-info {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #444;
+}
+
+.customer-info p {
+    margin: 5px 0;
+}
+
+/* Special Instructions Section */
+.special-instructions {
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #555;
+    padding: 10px;
+    background-color: #fdf2e9;
+    border: 1px solid #ffedd5;
+    border-radius: 5px;
+}
+
+/* Button */
+.button-container {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    background-color: #ff4500;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+button:hover {
+    background-color: #ff7033;
+}
+
+
+/* Styling for the welcome section */
+.welcome {
+    background-color: #ffb347;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 80%;
+}
+
+.welcome h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+/* Styling for the featured dishes section */
+.featured-dishes {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+    margin: 20px auto;
+    max-width: 90%;
+}
+
+.featured-dishes h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+}
+
+/* Menu items styling */
+.menu-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.menu-item {
+    background-color: white;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.menu-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff4500;
+}
+
+.menu-item p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Styling for the about us section */
+.about-us {
+    background-color: #fff3e6;
+    padding: 50px 20px;
+    text-align: center;
+    margin: 20px auto;
+    max-width: 80%;
+    border-radius: 10px;
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* Responsive design: stacking items on smaller screens */
+@media (max-width: 768px) {
+    .menu-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}
