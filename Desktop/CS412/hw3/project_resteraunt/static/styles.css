@@ -32,7 +32,7 @@ nav a:hover {
     margin: 0 auto;
 }
 .hero {
-    background-image: url('https://example.com/naruto-ramen.jpg'); /* Add a Naruto ramen-themed image URL */
+    background-image: url('https://example.com/naruto-ramen.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -121,7 +121,6 @@ button[type="submit"]:hover {
     background-color: #ff7033;
 }
 
-/* General page styling */
 .confirmation-page {
     max-width: 800px;
     margin: 0 auto;
@@ -181,7 +180,6 @@ strong {
     color: #333;
 }
 
-/* Customer Info Section */
 .customer-info {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -192,7 +190,6 @@ strong {
     margin: 5px 0;
 }
 
-/* Special Instructions Section */
 .special-instructions {
     font-size: 1.1rem;
     line-height: 1.5;
@@ -223,8 +220,6 @@ button:hover {
     background-color: #ff7033;
 }
 
-
-/* Styling for the welcome section */
 .welcome {
     background-color: #ffb347;
     color: white;
@@ -245,7 +240,6 @@ button:hover {
     line-height: 1.5;
 }
 
-/* Styling for the featured dishes section */
 .featured-dishes {
     text-align: center;
     padding: 50px 20px;
@@ -259,7 +253,6 @@ button:hover {
     margin-bottom: 30px;
 }
 
-/* Menu items styling */
 .menu-items {
     display: flex;
     justify-content: space-around;
@@ -294,7 +287,6 @@ button:hover {
     color: #666;
 }
 
-/* Styling for the about us section */
 .about-us {
     background-color: #fff3e6;
     padding: 50px 20px;
@@ -315,7 +307,6 @@ button:hover {
     margin-bottom: 10px;
 }
 
-/* Responsive design: stacking items on smaller screens */
 @media (max-width: 768px) {
     .menu-items {
         flex-direction: column;
