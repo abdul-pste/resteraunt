@@ -1,0 +1,67 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# macOS specific files
+.DS_Store
+
+# Logs
+*.log
+
+# Virtual environment
+venv/
+env/
+
+# Django static files
+staticfiles/
+
+# Database
+*.sqlite3
+
+# Unit test / coverage reports
+htmlcov/
+.coverage
+.tox/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node.js files (if applicable)
+node_modules/
+
+# Python package files
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Heroku logs
+*.log
+
+# Misc
+*.class
+*.jar
+*.war
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.java
+*.jpeg
+*.png
+
+# macOS system and cache directories
+.Trash/
+Library/
+
+
+# iCloud sync folders
+iCloud Drive (Archive)*/
